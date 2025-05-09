@@ -1,10 +1,10 @@
--- hello/init.lua
+-- lua/hello/init.lua
 
 local M = {}
 
 function M.setup()
   vim.api.nvim_create_user_command("HelloWorld", function()
-    vim.api.nvim_echo({ { "2025-05-09 @ 09:22 sssss" } }, false, {})
+    vim.api.nvim_echo({ { "Hello from plugin!", "None" } }, false, {})
   end, {})
 
   vim.keymap.set("n", "<leader>hw", function()
@@ -12,4 +12,4 @@ function M.setup()
   end, { desc = "Say Hello from Plugin" })
 end
 
-return 
+return M  -- ✅ This must return the module
