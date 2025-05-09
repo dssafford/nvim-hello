@@ -4,7 +4,7 @@ local M = {}
 
 function M.setup()
   vim.api.nvim_create_user_command("HelloWorld", function()
-    vim.api.nvim_echo({ { "Hello from this is updated 2025-05-09 @ 08:19", "None" } }, false, {})
+    vim.api.nvim_echo({ { "2025-05-09 @ 08:28 - DUDE", "None" } }, false, {})
   end, {})
 
   vim.keymap.set("n", "<leader>hw", function()
