@@ -4,7 +4,7 @@ local M = {}
 
 function M.setup()
   vim.api.nvim_create_user_command("HelloWorld", function()
-    vim.api.nvim_echo({ { "2025-05-09 @ 09:05 555" } }, false, {})
+    vim.api.nvim_echo({ { "2025-05-09 @ 09:22 sssss" } }, false, {})
   end, {})
 
   vim.keymap.set("n", "<leader>hw", function()
@@ -12,4 +12,4 @@ function M.setup()
   end, { desc = "Say Hello from Plugin" })
 end
 
-return M
+return 
